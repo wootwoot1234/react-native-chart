@@ -42,7 +42,8 @@ typedef NS_ENUM(NSInteger, RNChartField) {
 @property (nonatomic, assign) CGFloat axisTitleFontSize;
 
 // grid
-@property (nonatomic, assign) BOOL showGrid;
+@property (nonatomic, assign) BOOL showXGrid;
+@property (nonatomic, assign) BOOL showYGrid;
 @property (nonatomic, strong) UIColor* gridColor;
 @property (nonatomic, assign) CGFloat gridLineWidth;
 @property (nonatomic, assign) int verticalGridStep;
