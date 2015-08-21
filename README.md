@@ -90,7 +90,8 @@ All properties are optional otherwise noted
 - `xLabels` _(StringArray)_ - array of all X axis label strings.  This determines the X-axis grid as well.  Need to match the number of input data in `chartData` / **Required**
 - `animationDuration` _(CGFloat)_ - duration of the animation in seconds / Default: 0.3
 
-- `showGrid` _(BOOL)_ - show or hide grid / Default: true
+- `showXGrid` _(BOOL)_ - show or hide X axis grid / Default: true
+- `showYGrid` _(BOOL)_ - show or hide Y axis grid / Default: true
 - `verticalGridStep` _(int)_ - number of Y axis grids / Default: 3
 - `gridColor` _(color)_ - color of the grid / Default: lightgray
 - `gridLineWidth` _(CGFloat)_ - width of the grid line / Default: 0.5

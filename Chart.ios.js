@@ -16,7 +16,8 @@ var RNChartView = createReactNativeComponentClass({
         verticalGridStep:true,
         animationDuration:true,
 
-        showGrid:true,
+        showXGrid:true,
+        showYGrid:true,
         gridColor:true,
         gridLineWidth:true,
 
