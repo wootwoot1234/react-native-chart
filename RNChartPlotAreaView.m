@@ -151,12 +151,14 @@
   CGFloat maxBound = [self.parentChartView maxVerticalBound];
 
   CGFloat barWidth = (axisWidth / self.parentChartView.xLabels.count * [self.parentChartView horizontalScale] * 0.5) * widthPercent; // 60% of the full width
+  CGFloat xOffset = ((axisWidth / self.parentChartView.xLabels.count * [self.parentChartView horizontalScale] * 0.5) * (1.0 - widthPercent));
 
   for ( NSUInteger i = 0; i < dataPlots.count; ++i ) {
 
     CGFloat s = axisHeight / (maxBound - minBound);
     CGPoint point = [self getPointForIndex:i data:dataPlots withScale:s];
     point.y +=  minBound * s;
+    point.x -= xOffset;
 
     CGFloat height = axisHeight - point.y;
     UIBezierPath* circle = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(point.x - barWidth, point.y, barWidth * 2, height) cornerRadius:1.0];
