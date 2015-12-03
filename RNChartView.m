@@ -172,8 +172,8 @@
   _showYAxisLabels = YES;
   _axisColor = [UIColor colorWithWhite:0.7 alpha:1.0];
   _gridColor = [UIColor colorWithWhite:0.9 alpha:1.0];
-  _showXGrid = NO;
-  _showYGrid = NO;
+  _showXGrid = YES;
+  _showYGrid = YES;
   _gridLineWidth = 0.5;
   _axisLineWidth = 1;
   _animationDuration = 0.5;
